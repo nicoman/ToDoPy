@@ -10,7 +10,10 @@ class Task(object):
 
 class TaskList(object):
     """ A class to list Task """
-    #lista_metod = []
-    def __init__(self, name, tasks):
+
+    def __init__(self, name):
         self.name = name
-        self.tasks = tasks
+        self.tasks = []
+
+    def __str__(self):
+        return self.name
