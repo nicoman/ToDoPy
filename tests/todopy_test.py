@@ -20,9 +20,9 @@ class TestTask(unittest.TestCase):
         task1_test = Task("Test1_title", "Test1_description")
         task2_test = Task("Test2_title", "Test2_description")
         task_list = TaskList("My List")
-        task_list.tasks.append(task1_test)
-        task_list.tasks.append(task2_test)
-        self.assertEqual(len(task_list.tasks), 2)
+        task_list.add(task1_test)
+        task_list.add(task2_test)
+        self.assertEqual(len(task_list), 2)
 
 if __name__ == '__main__':
     unittest.main()

@@ -17,3 +17,9 @@ class TaskList(object):
 
     def __str__(self):
         return self.name
+
+    def __len__(self):
+        return len(self.tasks)
+
+    def add(self, x):
+        self.tasks.append(x)
