@@ -7,6 +7,10 @@ class Task(object):
     def __str__(self):
         return self.title
 
+    def to_json(self):
+        data = {'title': self.title, 'description': self.description}
+        return data
+
 
 class TaskList(object):
     """ A class to list Task """
